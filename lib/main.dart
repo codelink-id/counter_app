@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Counter App',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -28,9 +28,9 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.amber),
+        colorScheme: .fromSeed(seedColor: Colors.blueAccent),
       ),
-      home: const CounterPage(title: 'Flutter Counter Page'),
+      home: const CounterPage(title: 'Counter Page'),
     );
   }
 }
@@ -115,7 +115,7 @@ class _CounterPageState extends State<CounterPage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.send),
+        child: const Icon(Icons.add),
       ),
     );
   }
